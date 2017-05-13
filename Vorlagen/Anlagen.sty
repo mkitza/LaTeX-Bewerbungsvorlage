@@ -65,8 +65,8 @@
 
 % Setze erste Seite des Anhanges
 \newcommand \setFirstPageEncl {
-	\IfFileExists{\labelFilePath}{
-		\input{\labelFilePath}% Hier ist der letzte Label gespeichert.
+	\IfFileExists{\labelFile}{
+		\input{\labelFile}% Hier ist der letzte Label gespeichert.
 	}{
 		\setFirstPage{\enclLabel}{DoesNotExist}{\enclLabel}{DoesNotExist}
 	}
